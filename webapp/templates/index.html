@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Welcome!</title>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>
+   var accessToken = '{{ user_profile.access_token }}';
+  </script>
+  
+
+  <script src="/static/app.js"></script>
+  <script src="/static/SpryMenuBar.js" type="text/javascript"></script>  
+  <link href="/static/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" type="text/css" href="/static/login.css" >
+<!-- 	 <link href="{{ STATIC_URL }}style0.css" rel="stylesheet" type="text/css" />
+ -->  
+ </head>
+
+ <body>
+    <!-- <h1 ><a href="/" class="button">Home</a></h1> -->
+    <div id="py">
+    {% if request.user.is_authenticated %}
+     <div id="admin">{{request.user.username }}</div>
+
+    
+
+
+
+<br>
+<!--     {authenticated services :
+ -->      {%for sservice in request.user.services%}
+        {{sservice}}
+      {% endfor %}
+    <!-- } -->
+    {% endif %}
+    
+    {% if request.user.is_authenticated %}
+  </div>
+ <!--
+   ---------------------------------------------
+<p>Register with one or more of these services:</p>
+
+    <ul id="auth">
+    {% for service in services %}
+        <li>
+            <a href="/authenticate/{{ service.lower }}">
+                {% if service.lower in profiles %}
+                    <span class="check">&#10003;</span>
+                {% endif %}
+                {{ service }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    <p>Register with one or more of these services:</p>
+
+ 
+
+    <form action="/authenticate/{{ service.lower }}" method="post">{% csrf_token %}
+
+    <select name="service">
+      {% for service in services %}
+         <option value="{{ service }}" >{{ service }}</option>
+      {% endfor %}
+     </select>
+     <input type="submit" value="Authenticate" />
+     </form>
+
+	   <br>
+   ---------------------------------------------
+     -->
+      <link rel="stylesheet" href="/static/style2.css" /> 
+             <nav>
+        	<ul>
+        		<li><a href="#">Home</a></li>
+        		<li><a href="#">Register</a>
+        			<ul>
+        				<li><a href="authenticate/facebook">Facebook</a>
+           				</li>
+        				<li><a href="authenticate/twitter">Twitter</a></li>
+        			</ul>
+        		</li>
+        		<li><a href="#">Get Results</a>
+        			<ul>
+        				<li><a href="#">Facebook</a>
+						<ul>
+                      <li><a href="topk/facebook_status/">Best Status Times</a></li>
+                      <li><a href="topk/facebook_link/">Best Links Times</a></li>
+                      <li><a href="topk/facebook_albums/">Best Albums Times</a></li>
+						</ul>
+						</li>
+        				<li><a href="#">Twitter</a>
+						<ul>
+                      <li><a href="topk/twitter_retweets/">Best Retweets</a></li>
+                    </ul>
+						</li>
+						<li><a href="compareft/">Compare</a>
+        			</ul>
+        		</li>
+        		<li><a href="#">Contact Us</a></li>
+        	</ul>
+        </nav>
+	 
+	 
+	 <!-- <div class="row">
+      <div class="large-12 columns">
+        
+            <ul id="MenuBar1" class="MenuBarHorizontal">
+              <li><a href="#">Home</a></li>
+              <li><a class="MenuBarItemSubmenu" href="#" >Register</a>
+                 <ul>
+                      <li><a href="authenticate/facebook">Facebook</a></li>
+                      <li><a href="authenticate/twitter">Twitter</a></li>
+                 </ul>
+              </li>
+              <li><a class="MenuBarItemSubmenu" href="#">Best Of</a>
+                <ul>
+                  <li><a class="MenuBarItemSubmenu" href="#">Facebook</a>
+                    <ul>
+                      <li><a href="topk/facebook_status/">Best Status Times</a></li>
+                      <li><a href="topk/facebook_link/">Best Links Times</a></li>
+                      <li><a href="topk/facebook_album/">Best Albums Times</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="MenuBarItemSubmenu" href="#">Twitter</a>
+                    <ul>
+                      <li><a href="#">Best Status Times</a></li>
+                      <li><a href="#">Best Links Times</a></li>
+                      <li><a href="#">Best Albums Times</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <script type="text/javascript">
+            var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+            </script> -->
+                    
+        <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+        <center><p><center><img src="/static/welcome.jpg"  width="600" height="500" alt="" align="middle" /></center></p></center>
+        
+      </div>
+    </div>
+
+     <br>
+   <!-- <div id="cs" ><ul><li><a href="/authenticate/facebook" id="circle"><img src="/static/facebook.jpg" alt="facebook html" width="150" height="150"></a></li>
+     
+    <li><a href="/authenticate/twitter"><img src="/static/twitter.jpg" alt="twitter html" width="150" height="150"></a></li>
+     
+    
+    <li><a href="/get_data/"><img src="/static/get_data.jpg" alt="Get Data from Services " width="200" height="200"> </a></li>
+     
+<!--     <li><a href="/get_stats/"> Data Statistics </a> </li>
+ -->
+<!--     <li><a href="/delete/"> Delete Account and Data </a></li>
+ -->     
+<!--        <li><a href="/get_topk/"><img src="/static/topk.jpg" alt="topk html" width="200" height="150"></a></li>
+     </ul>
+   </div>
+ -->     
+ <br><br>
+
+    
+
+<!--
+    
+     -------------------------------------
+     <p>Get Data for one or more of these services:</p>
+
+    <ul id="auth">
+    {% for service in services %}
+        <li>
+            <a href="/get_user_data/{{ service.lower }}">
+                {% if service.lower in profiles %}
+                    <span class="check">&#10003;</span>
+                {% endif %}
+                {{ service }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+
+    ---------------------------------------------
+-->
+    
+    <div id="lgout">
+      <form action="/logout/" method="post">{% csrf_token %}
+      <input type="submit" value="Log Out" class="button1" />
+      </form>
+   </div>
+    <!--
+       ---------------------------------------------
+    <br/><br/><br/>
+    <form action="/delete_user/" method="post">{% csrf_token %}
+    <input type="submit" value="DELETE USER AND ALL DATA" />
+    </form>
+       ---------------------------------------------
+    -->
+
+    {% else %}
+<!-- 
+	<div id="vi" class="container">
+    <div class="header">
+        <div class="clr"></div>
+    </div>
+    <div class="sp-container">
+        <div class="sp-content">
+            <div class="sp-globe"></div>
+            	<h2 class="frame-1">Do you not get as many likes as you want</h2>
+
+            	<h2 class="frame-2">Do you wonder sometimes when to post status</h2>
+
+            	<h2 class="frame-3">You can stop it</h2>
+
+            	<h2 class="frame-4">Now</h2>
+
+            	<h2 class="frame-5"><span>Time To Get Visible</span></h2>
+	<a class="sp-circle-link" onclick="toggle_visibility('neemi-login')" href="#">Join us!</a>
+
+        </div>
+    </div>
+</div>
+
+ -->
+    <div id="neemi-login"style="display: block;"}
+      {{ state }}
+       <p><!-- Please login to neemi: --> <br/>
+		
+
+      <!-- <form action="/login/" method="post">{% csrf_token %} -->
+      <form name="login-form" class="login-form" action="/login/" method="post"> {% csrf_token %}
+<!--       login (neemi):
+ -->    
+      <div class="header">
+      <h1>Login Form</h1>
+      <span>Fill out the form below to Login to our super stock website.</span>
+      </div> 
+
+      <div class="content">
+      <!-- <input type="text" name="username" value="{{ username}}" /> -->
+      <input name="username" type="text" class="input username" placeholder="Username" value="{{ username}}" />
+      <div class="user-icon"></div>
+      <!-- password: -->
+      <input name="password" type="password" class="input password" placeholder="Password" />
+      <!-- <input type="password" name="password" value="" /> -->
+      <div class="pass-icon"></div>   
+      </div>
+      <br/>
+      <div class="footer">
+      <input type="submit" name="submit" value="Login" class="button" />
+      <!-- <input type="submit" value="Log In" /> -->
+      </div>
+      </form>
+   </div>
+    {% endif %}
+ <!--
+
+   <div id="empowered">
+     <a href="http://singly.com/"><img src="/static/empowered.png" /></a>
+    </div>
+ -->
+    
+  </body>
+</html>

@@ -1,0 +1,167 @@
+
+ ------------------------------------ 
+
+===> Statistics - 04/27/14 20:28:42
+Total size in bytes of the data held in this database: 6686880
+Average size of each document in bytes: 3372.10287443
+Number of objects: 1983
+Number of collections: 7
+
+Collections: 
+----
+facebook_data
+Number of documents: 1527
+Collection size in bytes: 4926608
+Average object size in bytes: 3226
+
+----
+twitter_data
+Number of documents: 421
+Collection size in bytes: 1754624
+Average object size in bytes: 4167
+
+MENTION: 30
+TWEET: 386
+RETWEET: 5
+
+ ------------------------------------ 
+
+===> Statistics - 04/29/14 08:38:55
+Total size in bytes of the data held in this database: 3637648
+Average size of each document in bytes: 2534.94634146
+Number of objects: 1435
+Number of collections: 17
+
+Collections: 
+----
+facebook_data
+Number of documents: 1350
+Collection size in bytes: 3627424
+Average object size in bytes: 2686
+
+----
+twitter_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gplus_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+g_latitude_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+linked_in_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gmail_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gdrive_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+dropbox_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+amex_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gcontacts_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+foursquare_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gcal_data
+Number of documents: 0
+Collection size in bytes: 0
+
+
+ ------------------------------------ 
+
+===> Statistics - 04/29/14 10:27:54
+Total size in bytes of the data held in this database: 3637152
+Average size of each document in bytes: 2536.36820084
+Number of objects: 1434
+Number of collections: 17
+
+Collections: 
+----
+facebook_data
+Number of documents: 1350
+Collection size in bytes: 3627424
+Average object size in bytes: 2686
+
+----
+twitter_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gplus_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+g_latitude_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+linked_in_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gmail_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gdrive_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+dropbox_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+amex_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gcontacts_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+foursquare_data
+Number of documents: 0
+Collection size in bytes: 0
+
+----
+gcal_data
+Number of documents: 0
+Collection size in bytes: 0
+
